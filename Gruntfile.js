@@ -14,6 +14,11 @@ module.exports = function (grunt) {
 
   // Automatically load required Grunt tasks
   require('jit-grunt')(grunt, {
+	   jitGrunt: {
+        staticMappings: {
+            default: 'the-name-of-your-grunt-task'
+        }
+    }
     useminPrepare: 'grunt-usemin',
     ngtemplates: 'grunt-angular-templates',
     cdnify: 'grunt-google-cdn'
